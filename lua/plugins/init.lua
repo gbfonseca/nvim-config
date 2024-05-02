@@ -35,13 +35,9 @@ return {
   -- 		},
   -- 	},
   -- },
-  {
-    "mrcjkb/rustaceanvim",
-    version = "^4",
-    ft = { "rust" },
-    dependencies = "neovim/nvim-lspconfig",
-    config = function()
-      require "custom.configs.rustaceanvim"
-    end
-  }
+    {
+  'mrcjkb/rustaceanvim',
+  version = '^4', -- Recommended
+  lazy = false, -- This plugin is already lazy
+}
 }
