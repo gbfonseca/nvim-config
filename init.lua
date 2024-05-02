@@ -38,5 +38,7 @@ vim.schedule(function()
   require "mappings"
 end)
 
+require("nvim-tree.api").tree.open()
+
 -- Config
 require 'lspconfig'.tsserver.setup {}
